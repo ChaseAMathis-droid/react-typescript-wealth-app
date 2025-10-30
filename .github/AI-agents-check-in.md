@@ -1,4 +1,4 @@
-## repo AI instructions (short & actionable)
+## AI agents check-in (short & actionable)
 
 This file tells an AI assistant how this repo is organized and how to run/edit it. Keep updates small and factual.
 
@@ -33,4 +33,4 @@ Deployment & demos
 If anything is unclear, open an issue in the repo or ask the maintainer for missing details (API keys, env vars, preferred conventions).
 
 ---
-If you want this file renamed, keep the filename `/.github/copilot-instructions.md` for GitHub Copilot compatibility; alternate names may not be picked up automatically.
+Note: GitHub Copilot reads `/.github/copilot-instructions.md` by default — if you want editors/agents to pick up this file automatically, keep a copy at that name. Otherwise this file name is fine for human and generic AI discovery.
