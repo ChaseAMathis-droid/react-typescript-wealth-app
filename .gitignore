@@ -1,0 +1,10 @@
+node_modules/
+dist/
+/.vite
+/.idea
+.DS_Store
+env.local
+.env
+coverage/
+package-lock.json
+/*.log
