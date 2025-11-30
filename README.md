@@ -31,5 +31,33 @@ npm test
 npm run typecheck
 ```
 
+## Docker
+
+Build and run the production container:
+
+```bash
+# Build the Docker image
+docker build -t wealth-app .
+
+# Run the container (production)
+docker run -d -p 3000:80 --name wealth-app wealth-app
+
+# Or use docker-compose
+docker-compose up web
+```
+
+For development with hot reload:
+
+```bash
+docker-compose up dev
+```
+
+The production container uses a multi-stage build:
+- Stage 1: Node 20 Alpine to build the app with Vite
+- Stage 2: Nginx Alpine to serve the static files
+
+Access the app at http://localhost:3000 (production) or http://localhost:5173 (dev).
+
 Notes
 - The repository's GitHub Actions workflow will use `npm ci` when `package-lock.json` is present and caches the npm cache (~/.npm) to speed up CI runs.
+- `index.html` must be at the project root (not in `public/`) for Vite builds to work correctly.

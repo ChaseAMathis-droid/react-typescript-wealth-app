@@ -1,0 +1,13 @@
+# Docker ignore file
+node_modules
+dist
+.git
+.github
+.gitignore
+*.log
+coverage
+.env
+.env.local
+.DS_Store
+README.md
+docker-compose.yml
